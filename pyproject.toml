@@ -10,7 +10,7 @@ dependencies = [
 ]
 
 [project.scripts]
-mcp-server = ["mcpserver.__main__:main"]
+mcp-server = "mcpserver.__main__:main"
 
 [build-system]
 requires = ["setuptools"]
