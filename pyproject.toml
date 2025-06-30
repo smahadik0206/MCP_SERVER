@@ -9,7 +9,7 @@ dependencies = [
     "mcp[cli]>=1.9.4",
 ]
 
-[project.script]
+[project.scripts]
 mcp-server = ["mcpserver.__main__:main"]
 
 [build-system]
