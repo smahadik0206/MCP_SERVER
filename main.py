@@ -1,7 +1,6 @@
 from mcp.server.fastmcp import FastMCP
 import requests
 
-# SERPAPI_KEY = ''  
 
 mcp = FastMCP('WeatherApp')
 API_KEY = ''
