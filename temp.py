@@ -51,17 +51,6 @@ def get_record_by_hospital_location_details(location_name: str) -> dict:
             return record
     return {"error": f"Location '{location_name}' not any record found."}
 
-# @mcp.resource("mercy://location//{location_name}")
-# def get_hospital_location_details(location_name: str) -> dict:
-#     """
-#     Retrieves all details for a given location name from the data file.
-#     """
-#     for record in all_location_data:
-#         if record.get("location-name", "").lower() == location_name.lower():
-#             return record
-#     return {"error": f"Location '{location_name}' not found."}
-
-
 @mcp.resource("mercy://mrf_url//{location_name}")
 def get_mrf_url_by_location_name(location_name: str) -> str:
     """
